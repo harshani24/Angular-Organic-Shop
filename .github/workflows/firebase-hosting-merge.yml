@@ -23,8 +23,8 @@ jobs:
 
       - name: Authenticate with Firebase
         run: |
-          firebase use --token ${{ secrets.FIREBASE_TOKEN }}
-          firebase use ${{ secrets.FIREBASE_PROJECT_ID }}
+          firebase use --token ${{secrets.FIREBASE_TOKEN}}
+          firebase use ${{secrets.FIREBASE_PROJECT_ID}}
 
       - name: Build and Deploy
         run: |
